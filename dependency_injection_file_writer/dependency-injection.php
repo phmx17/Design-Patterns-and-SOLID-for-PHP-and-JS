@@ -7,8 +7,9 @@ abstract class FileWriter {
  * it gets extended with child file writers, and they get instantiated
  * However this abstract class is required in order to provide the object type 
  * getting passed into the Processor object
+ * it also enforces child classes to implement writeToFile()
  * SOLID also applies because this class nor the Processor Class require any maintenance if adding more fileWriter versions.
- * === scaleability rules!
+ * scaleability rules!
  **/
  
   abstract public function writeToFile($data): bool;
